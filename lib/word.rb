@@ -64,7 +64,7 @@ def get_word
   file_path = File.expand_path("../english_word.txt", __FILE__)
   File.open(file_path, "r") do |file|
     word = file.to_a.sample
-    until word.length >= 5 and word.length <= 12
+    until word.length >= 5 && word.length <= 12
       word = file.to_a.sample
     end
     word
